@@ -6,6 +6,7 @@
 # @Software: PyCharm
 import numpy as np
 import tensorflow as tf
+
 # x =[[[1,1],[1,1]],[[1,1],[1,1]],[[1,1],[1,1]]]
 # x = np.asarray(x)
 # matrix_pad = np.pad(x,pad_width=((1, 2),#向上填充1个维度，向下填充两个维度
@@ -15,9 +16,6 @@ import tensorflow as tf
 #                     constant_values=(6, 5)  #第一个维度（就是向上和向左）填充6，第二个维度（向下和向右）填充5
 #                     )
 # print(matrix_pad)
-
-
-
 
 
 
