@@ -1,0 +1,13 @@
+#!D:/workplace/python
+# -*- coding: utf-8 -*-
+# @File  : 58.py
+# @Author: WangYe
+# @Date  : 2019/9/19
+# @Software: PyCharm
+def lengthOfLastWord(s):
+    l = s.rstrip().split(' ')
+    if len(l) == 0:
+        return 0
+    else:
+        return len(l[-1])
+print(lengthOfLastWord('a'))

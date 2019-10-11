@@ -9,7 +9,6 @@ def searchInsert(nums, target):
         if i == 0:
             if target <=nums[i]:
                 return i
-
         if i == (len(nums)-1):
             if target > nums[i]:
                 return len(nums)
