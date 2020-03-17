@@ -5,20 +5,34 @@
 # @Date  : 2019/3/26
 # @Software: PyCharm
 
-import matplotlib.pyplot as plt
 from pylab import *
-y1=[40775,21031,2772,30158,51035,60481]
-x1=[4,6,8,10,15,20]
-x2=[4,6,8,10,15,20]
-x3=[4,6,8,10,15,20]
-y2=[40775,40775,40775,40775,40775,40775]
-y3=[45015,45015,45015,45015,45015,45015]
-plt.plot(x1,y1,label='新的同步梯度下降法',linewidth=3,color='r',marker='o',
-markerfacecolor='blue',markersize=12)
-plt.plot(x2,y2,label='SSGD')
-plt.plot(x3,y3,label='Single')
-plt.xlabel('m')
-plt.ylabel('costing time')
-plt.title('new SSGD and SSGD costing time(cifar10_atrous)')
+import matplotlib.pyplot as plt
+mpl.rcParams['font.sans-serif'] = ['SimHei']
+y1=[40775,38644,30482,29001,25461,21031,20001,20772,22659,27856,30158]
+# x1=[4,6,8,10,15,20]
+x1=[1,1.2,1.4,1.6,1.8,2,2.2,2.4,2.6,2.8,3]
+x2=[1,1.2,1.4,1.6,1.8,2,2.2,2.4,2.6,2.8,3]
+# x3=[4,6,8,10,15,20]
+y2=[40775,40775,40775,40775,40775,40775,40775,40775,40775,40775,40775]
+# y3=[45015,45015,45015,45015,45015,45015]
+plt.plot(x1,y1,label='改进方法',linewidth=3,
+         color='black',
+         marker='*',
+markerfacecolor='black',
+         markersize=10)
+plt.plot(x2,y2,linewidth=3,
+         label = '传统方法'
+         , color='black'
+         # ,marker='v',
+,markerfacecolor='black',markersize=12
+         )
+# plt.plot(x2,y2,label='SSGD')
+# plt.plot(x3,y3,label='Single')
+plt.xticks(fontsize=15)
+plt.yticks(fontsize=15)
+plt.xlabel('α',size = 20)
+plt.ylabel('time(s)',size = 20)
+plt.title('实验3中α参数对耗时的影响',size=20)
 plt.legend()
+plt.savefig('cifar10.svg',format = 'svg')
 plt.show()
