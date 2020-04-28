@@ -14,6 +14,5 @@ math_score = {'Nelly': 89}         #创建一个班级数学成绩字典 math
 
 math_score['Baade'] = 77                       #新增一个键值对 'Baade': 77
 print(math_score)                              #{'Madonna': 89, 'Cory': 99, 'Annie': 65, 'Nelly': 89, 'Baade': 77}
-# import java.util.Scanner;
 d.update({2:[1,2]})
 print(d.values())
